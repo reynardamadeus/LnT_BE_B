@@ -1,9 +1,26 @@
-
-
 @extends('layout.app')
 
 
-    @section('title', 'Website')
+    @section('title', 'Catalog')
+    @section('content')
+        <br>
+        @include('include.carousel')
+        <br>
+        <div class="container">
+            <div class="row row-cols-2 gap-4 justify-content-center poppins">
+                @include('include.card')
+                @include('include.card')
+                @include('include.card')
+                @include('include.card')
+                @include('include.card')
+                @include('include.card')
+                @include('include.card')
+                @include('include.card')
+                @include('include.card')
+            </div>
+    </div>
+    @endsection
+
     {{-- <div class="container">
         <div class="row">
             <div class="col bg-primary text-light border border-dark">1</div>
@@ -23,18 +40,4 @@
         </div>
     </div> --}}
 
-    @section('content')
-    <br>
-    <div class="container">
-        <div class="row gap-3">
-            <div class="col bg-success text-light p-4">
-                <h2>Visi</h2>
-                <p>Menjadi programmer Backend yang handal</p>
-            </div>
-            <div class="col bg-success text-warning  p-4 ">
-                <h2>Misi</h2>
-                <p>Belajar laravel hingga paham 100%</p>
-            </div>
-        </div>
-    </div>
-    @endsection
+
